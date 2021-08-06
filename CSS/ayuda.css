@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+body{
+    background: #f3f3f3;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+
+/*menu*/
+
+.contenedor{
+    width: 100%;
+    background: rgb(116, 14, 14);
+
+    
+}
+.menu{
+ width: 90%;
+ display: flex;
+ justify-content: space-between;
+ color: white;
+ text-align: center;
+ align-items: center;
+ margin: auto;
+ height: auto;
+ 
+}
+.menu-enlaces{
+    width: 40%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+
+}
+.menu-enlaces a{
+   color: white;
+   margin: 5px 0;
+   font-weight:700;
+   padding: 10px;
+
+}
+.menu-enlaces a:hover{
+    color: yellow           ;
+}
+.menu-icono{
+    width: 10%;
+    margin: 5px 0;
+}
+
+.menu-icono img{
+    width: 100%;
+}
+
+
+.icono{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-enlaces2{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    font-size: 15px;
+    display: none;
+   
+}
+
+.cerrarmenu{
+        text-align: center;
+        font-size: 24px;
+        justify-content: center;
+        padding: 8px;
+        border: 1px solid white;
+        border-radius: 4px;
+        width: 5%;
+        display: none;
+}
+.iconoAbrir{
+    text-align: center;
+    font-size: 24px;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 5%;
+    display: none;
+}
+
+
+
+/*FORMILARIO*/
+.cuerpo article{
+    display: flex;
+    flex-direction: column;
+    
+}
+.cuerpo form{
+
+    width: 40%;
+    height: auto;
+    border: 1px solid black;
+    margin: auto;
+    padding: 20px;
+    background: rgb(116, 14, 14);
+    color:white;
+    text-align: left;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 6px 10px 21px 0px rgba(0,0,0,0.41);
+       box-shadow: 6px 10px 21px 0px rgba(0,0,0,0.41);
+       box-shadow: 6px 10px 21px 0px rgba(0,0,0,0.41);
+}
+
+.cuerpo label{
+    font-size: 16px;
+    display:block;
+    width: 100%;
+    margin-bottom: 5px
+    
+}
+.cuerpo input{
+    font-size: 14px;
+    display:block;
+    width: 90%;
+    margin-bottom: 10px
+}
+.cuerpo input,textarea{
+    margin-bottom: 25px;
+    width: 90%;
+    padding: 13px;
+    box-sizing: content-box;
+    border-radius: 3px;
+}
+.cuerpo textarea{
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+    font-size:  14px;
+}
+.cuerpo input:focus,textarea:focus{
+    border:2px solid rgba(0,203,255,1.00);
+    
+}
+.cuerpo input[type="submit"]{
+    margin-bottom: o;
+    background:yellow;
+    color:rgb(116, 14, 14);
+    font-weight: 700;
+    border:none;
+    
+}
+.cuerpo input[type="submit"]:hover{
+    background: yellow;
+    color: rgb(116, 14, 14);
+    font-weight: 700;
+    cursor:pointer;
+}
+.cuerpo h1{
+    text-align: center;
+    color: rgb(116, 14, 14);
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*pverlay*/
+
+.overlay{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.836);
+    width: 100%;
+    height:100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  
+}
+.activo{
+    display: flex;
+}
+.contenimg{
+    width: 40%;
+    margin: auto;
+ 
+}
+.overlay .contenimg figure{
+    background: white;
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.contenimg figure img{
+    width: 100%;
+    border-radius: 8px;
+}
+.overlay .contenimg figure figcaption{
+    display: flex;
+    justify-content: center; 
+    justify-content: space-around;
+    width: 100%;
+    font-weight: 900;
+    height: 30px;
+}
+.contenimg figure figcaption span{
+    
+    color: rgb(116, 14, 14);
+}
+
+
+
+
+
+
+.formulario{
+   width: 40%;
+   margin: auto;
+   background: white;
+   height: 75%;
+   border: none;
+   border-radius: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.formulario form{
+    text-align: left;
+    width: 70%;
+
+    margin-top: 10px;
+    margin: auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+}
+.formulario h2{
+    text-align: center;
+}
+label{
+    width: 700;
+
+}
+input{
+    border: none;
+    height: 25px;
+    width: 100%;
+}
+    
+form input:focus{
+    border:2px solid rgba(0,203,255,1.00);
+    
+}
+input[type="submit"]{
+    margin-bottom: o;
+    background:#ffd903fd;
+    font-size: 15px;
+    font-weight: 700;
+    color:rgb(184, 44, 2);;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+input[type="submit"]:hover{
+    background: rgb(184, 44, 2);
+    cursor:pointer;
+    color: yellow;
+}
+
+
+.cerraroverlay{
+    background: none;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+    top: 10px;
+    right: 19px;
+    width: 25px;
+    height: 35px;
+}
+.cerraroverlay #btn-cerrar{
+    background: none;
+    color: white;
+    border: none;
+    width: 100%;
+}
+#btn-cerrar i{
+    width: 100%;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+footer{
+    margin-top: 15px;
+    text-align:center;
+    background: rgb(116, 14, 14);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+	justify-content: center;
+}
+footer a{
+	color:white;
+}
+.ubicanos, .siguenos,.contactanos{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 10px;
+}
+footer h2{
+	margin-bottom: 10px;
+}
+.ubicanos a,p{
+    color:white;
+	margin-bottom: 6px;
+}
+.siguenos{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+/*responsive*/
+@media screen and (max-width:800px){
+    .menu-enlaces{
+        width: 70%;
+    }
+
+    .contenido-slider >div a{
+      font-size: 20px;
+    }
+    .conten p{
+        font-size: 20px;
+    }
+    .cuentaregresiva{
+        height: 150px;
+    }
+}
+@media screen and (max-width:650px){
+    .menu-enlaces{
+       display: none;
+    }
+    .menu .menu-enlaces2{
+        
+        flex-direction: column;
+        transition: all 3.25s;
+        
+    }
+    .menu-enlaces2 a{
+        color: white;
+        justify-content: space-around;
+        margin: auto;
+        padding: 15px 5px;
+        font-size: 13px;
+        
+    }
+
+    .menu-icono{
+        width: 18%;
+    }
+    .iconoAbrir{
+        display: flex;
+    }
+
+    .contenido-slider>div a:nth-child(1){
+        padding: 5px;
+        font-size: 10px;
+        background: rgb(119, 8, 8);
+        color: yellow;
+        border-radius: 4px;
+    }
+    figure{
+        font-size: 12px;
+    }
+    figcaption p{
+       
+        padding: 8px 10px;
+   
+    }
+    figcaption .comprar{
+        color: white;
+        padding: 2px;
+        height: 12px;
+        background: rgb(116, 14, 14);
+        border-radius:5px;
+        margin-top: 4px;
+    }
+    footer{
+        font-size: 10px;
+    }
+    .conten p{
+        font-size: 13px;
+    }
+    .cerrar i{
+        font-size: 17px;
+    }
+    .menu{
+        flex-wrap: wrap;
+
+    }
+    .overlay{
+    
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 9px;
+    }
+
+    .overlay .contenimg{
+        display: none;
+    }
+    .overlay .formulario{
+        margin: auto;
+        width: 70%;
+        height: 80%;
+    }
+    .promociones figcaption span{
+        display: flex;
+        color: rgb(116, 14, 14);
+        font-weight: 700;
+        font-size: 15px;
+    }
+  
+
+}
+@media screen and (max-width:400px){
+    .promociones figcaption span{
+        font-size:12px;
+        
+    }
+    .promociones figure .comprar{
+        font-size: 9px;
+        padding: 1px 3px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .promociones figure figcaption p{
+        font-size: 10px;
+    }
+    .cuentaregresiva .conten p{
+        font-size: 9px;
+    }
+}
+.activo{
+    display: flex;
+}
+.inactivo{
+    display: none;
+}
